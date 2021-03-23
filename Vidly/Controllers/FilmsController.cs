@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Vidly.Controllers
 {
@@ -15,5 +11,11 @@ namespace Vidly.Controllers
 
             return View(film);
         }
+        
+        public ActionResult ByReleaseDate(int month, int year)
+        {
+            return Content($"{month}/{year}");
+        }
+
     }
 }
