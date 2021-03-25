@@ -27,9 +27,10 @@ namespace Vidly.Controllers
             return View(viewModel);
         }
         
-        public ActionResult ByReleaseDate(int month, int year)
+        [Route("films/released/{year:regex(\\d{4})}/{month:regex(\\d{2}}")]
+        public ActionResult ByReleaseDate(int year, int month)
         {
-            return Content($"{month}/{year}");
+            return Content($"{year}/{month}");
         }
 
     }
