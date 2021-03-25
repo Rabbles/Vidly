@@ -18,6 +18,12 @@ namespace Vidly.Controllers
         {
             var customer = GetCustomers().FirstOrDefault(c => c.Id == id);
 
+            if (customer == null)
+            {
+                return HttpNotFound();
+            }
+                
+
             return View(customer);
         }
 

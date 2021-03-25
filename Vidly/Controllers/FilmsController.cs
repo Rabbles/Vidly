@@ -27,11 +27,25 @@ namespace Vidly.Controllers
             return View(viewModel);
         }
         
-        [Route("films/released/{year:regex(\\d{4})}/{month:regex(\\d{2}}")]
+        //[Route("films/released/{year:regex(\\d{4})}/{month:regex(\\d{2}}")]
         public ActionResult ByReleaseDate(int year, int month)
         {
             return Content($"{year}/{month}");
         }
 
+        public ViewResult Index()
+        {
+            return View(GetFilms());
+        }
+
+        private List<Film> GetFilms()
+        {
+            return new List<Film>
+            {
+                new Film { Id = 1, Name = "The Grand Budapest Hotel" },
+                new Film { Id = 2, Name = "Mullholland Drive"},
+                new Film { Id = 3, Name = "My Neighbour Totoro"}
+            };
+        }
     }
 }

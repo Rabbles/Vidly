@@ -11,12 +11,6 @@ namespace Vidly
 
             routes.MapMvcAttributeRoutes();
 
-            //order of routes is important
-            //this is also an older technique and is left here for learning purposes.
-            //routes.MapRoute("FilmsByReleaseDate", "films/released/{month}/{year}",
-            //    new { controller = "Films", action = "ByReleaseDate" },
-            //    new {month = @"\d{2}", year = @"\d{4}" });
-
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
