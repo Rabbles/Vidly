@@ -58,6 +58,12 @@
     <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Configuration.ConfigurationBuilders.Base, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Configuration.ConfigurationBuilders.Base.2.0.0\lib\Net471\Microsoft.Configuration.ConfigurationBuilders.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Configuration.ConfigurationBuilders.UserSecrets, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.2.0.0\lib\Net471\Microsoft.Configuration.ConfigurationBuilders.UserSecrets.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -149,11 +155,39 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>202104201546044_InitialModel.resx</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104201914461_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\202104201914461_AddIsSubscribedToCustomer.designer.cs">
+      <DependentUpon>202104201914461_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104201914461_AddIsSubscribedToCustomer1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>202104201914461_AddIsSubscribedToCustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104201920009_AddMembershipType.cs" />
+    <Compile Include="Migrations\202104201920009_AddMembershipType.designer.cs">
+      <DependentUpon>202104201920009_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104201920009_AddMembershipType1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>202104201920009_AddMembershipType.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104201926039_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\202104201926039_PopulateMembershipTypes.designer.cs">
+      <DependentUpon>202104201926039_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104201926039_PopulateMembershipTypes1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>202104201926039_PopulateMembershipTypes.resx</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Film.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\RandomFilmViewModel.cs" />
   </ItemGroup>
@@ -220,6 +254,21 @@
       <Generator>ResXFileCodeGeneratorEx</Generator>
       <DependentUpon>202104201546044_InitialModel.cs</DependentUpon>
       <LastGenOutput>202104201546044_InitialModel1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104201914461_AddIsSubscribedToCustomer.resx">
+      <Generator>ResXFileCodeGeneratorEx</Generator>
+      <DependentUpon>202104201914461_AddIsSubscribedToCustomer.cs</DependentUpon>
+      <LastGenOutput>202104201914461_AddIsSubscribedToCustomer1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104201920009_AddMembershipType.resx">
+      <Generator>ResXFileCodeGeneratorEx</Generator>
+      <DependentUpon>202104201920009_AddMembershipType.cs</DependentUpon>
+      <LastGenOutput>202104201920009_AddMembershipType1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104201926039_PopulateMembershipTypes.resx">
+      <Generator>ResXFileCodeGeneratorEx</Generator>
+      <DependentUpon>202104201926039_PopulateMembershipTypes.cs</DependentUpon>
+      <LastGenOutput>202104201926039_PopulateMembershipTypes1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
