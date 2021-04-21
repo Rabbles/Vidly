@@ -10,5 +10,7 @@
 
         public byte DiscountRate { get; set;}
 
+        public string Name { get; set; }
+
     }
 }

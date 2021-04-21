@@ -182,6 +182,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>202104201926039_PopulateMembershipTypes.resx</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104211902412_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\202104211902412_ApplyAnnotationsToCustomerName.designer.cs">
+      <DependentUpon>202104211902412_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104211902412_ApplyAnnotationsToCustomerName1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>202104211902412_ApplyAnnotationsToCustomerName.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104211937054_AddNamePRopertyToMembershipType.cs" />
+    <Compile Include="Migrations\202104211937054_AddNamePRopertyToMembershipType.designer.cs">
+      <DependentUpon>202104211937054_AddNamePRopertyToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104211937054_AddNamePRopertyToMembershipType1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>202104211937054_AddNamePRopertyToMembershipType.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104211942224_UpdateMembershipTypeName.cs" />
+    <Compile Include="Migrations\202104211942224_UpdateMembershipTypeName.designer.cs">
+      <DependentUpon>202104211942224_UpdateMembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104211942224_UpdateMembershipTypeName1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>202104211942224_UpdateMembershipTypeName.resx</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -269,6 +296,21 @@
       <Generator>ResXFileCodeGeneratorEx</Generator>
       <DependentUpon>202104201926039_PopulateMembershipTypes.cs</DependentUpon>
       <LastGenOutput>202104201926039_PopulateMembershipTypes1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104211902412_ApplyAnnotationsToCustomerName.resx">
+      <Generator>ResXFileCodeGeneratorEx</Generator>
+      <DependentUpon>202104211902412_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+      <LastGenOutput>202104211902412_ApplyAnnotationsToCustomerName1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104211937054_AddNamePRopertyToMembershipType.resx">
+      <Generator>ResXFileCodeGeneratorEx</Generator>
+      <DependentUpon>202104211937054_AddNamePRopertyToMembershipType.cs</DependentUpon>
+      <LastGenOutput>202104211937054_AddNamePRopertyToMembershipType1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104211942224_UpdateMembershipTypeName.resx">
+      <Generator>ResXFileCodeGeneratorEx</Generator>
+      <DependentUpon>202104211942224_UpdateMembershipTypeName.cs</DependentUpon>
+      <LastGenOutput>202104211942224_UpdateMembershipTypeName1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
